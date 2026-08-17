@@ -385,7 +385,7 @@ Test Coverage
 
 The framework currently contains positive, negative and boundary login scenarios.
 
-Positive Test Cases
+**Positive Test Cases**
 ID	Test Case
 TC01	Login with valid username and valid password
 TC02	Verify successful login after page refresh
@@ -393,7 +393,7 @@ TC03	Verify successful login URL
 TC04	Verify successful login heading
 TC05	Verify successful login confirmation message
 TC06	Verify Logout button after successful login
-Negative Test Cases
+**Negative Test Cases**
 ID	Test Case
 TC07	Invalid username + valid password
 TC08	Valid username + invalid password
@@ -463,7 +463,7 @@ Trace files can be opened using:
 
 npx playwright show-trace <trace-file>
 
-Coding Standards
+**Coding Standards**
 
 The framework follows these coding practices:
 
@@ -481,7 +481,7 @@ Keep tests focused on business scenarios
 Keep framework components reusable
 Follow consistent naming conventions
 
-Maintainability and Scalability
+**Maintainability and Scalability**
 
 The framework is designed so that changes in one layer have minimal impact on other layers.
 
@@ -506,7 +506,7 @@ Test Cases
 This reduces duplication and makes the framework easier to maintain as the application grows.
 
 
-Future Enhancements
+**Future Enhancements**
 
 The framework can be extended with:
 
@@ -525,3 +525,21 @@ Email/Slack notifications
 Enhanced Allure reporting
 Test tagging
 Selective test execution
+
+**Quick Start**
+
+For a new environment:
+
+git clone <repository-url>
+
+
+cd playwright-login-automation
+
+
+npx playwright install chromium
+
+
+npx playwright test --project=chromium
+
+
+npx playwright show-report artifacts/playwright-report
